@@ -1,6 +1,8 @@
 import { prisma } from "@/lib/prisma";
 import { CategoryClient } from "@/features/admin/components/CategoryClient";
 
+export const dynamic = 'force-dynamic';
+
 export default async function AdminCategories() {
   const categories = await prisma.category.findMany({
     orderBy: { name: "asc" },

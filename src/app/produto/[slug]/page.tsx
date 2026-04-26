@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { Header } from "@/components/layout/Header";
 import { ProductDetailsClient } from "@/features/products/components/ProductDetailsClient";
 
+export const dynamic = 'force-dynamic';
+
 export default async function ProductPage({
   params,
 }: {

@@ -2,6 +2,8 @@ import { prisma } from "@/lib/prisma";
 import { ProductCard } from "@/features/products/components/ProductCard";
 import { Header } from "@/components/layout/Header";
 
+export const dynamic = 'force-dynamic';
+
 export default async function ProdutosPage({
   searchParams,
 }: {

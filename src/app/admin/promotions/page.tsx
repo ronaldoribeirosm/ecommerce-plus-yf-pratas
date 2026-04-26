@@ -2,6 +2,8 @@ import { prisma } from "@/lib/prisma";
 import { MessageCircle } from "lucide-react";
 import { PromoForm } from "@/features/admin/components/PromoForm";
 
+export const dynamic = 'force-dynamic';
+
 export default async function AdminPromotions() {
   // Buscar usuários registrados
   const users = await prisma.user.findMany({

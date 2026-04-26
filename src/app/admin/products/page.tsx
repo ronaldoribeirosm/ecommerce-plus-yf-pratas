@@ -30,7 +30,7 @@ export default async function AdminProducts() {
         <div className="p-6 border-b border-zinc-800">
           <h2 className="text-lg font-bold text-white">Estoque Atual ({products.length})</h2>
         </div>
-        
+
         <div className="overflow-x-auto">
           <table className="w-full text-left text-sm text-white">
             <thead className="bg-zinc-900 text-zinc-400">
@@ -61,7 +61,7 @@ export default async function AdminProducts() {
                   </tr>
                 );
               })}
-              
+
               {products.length === 0 && (
                 <tr>
                   <td colSpan={5} className="px-6 py-8 text-center text-text-muted">
